@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Yatzi
 {
@@ -12,37 +13,35 @@ namespace Yatzi
     {
         public int[] teningar;
         public Boolean[] geyma;
+        public int kostEftir;
 
 
         public Teningar() {
             teningar = new int[5];
             geyma = new Boolean[5];
+            kostEftir = 3;
 
             Random random = new Random();
 
             for (int i = 0; i < teningar.Length; i++)
             {
-                int tala = random.Next(1, 6);
-                Debug.WriteLine("nr: " + i + " =");
-
-                teningar[i] = tala;
-                Debug.WriteLine(teningar[i]);
-
+                teningar[i] = 0;
                 geyma[i] = false;
+                kostEftir = 3;
             }
 
         }
         public void kastaTeningum()
         {
             Random random = new Random();
-
             for (int i = 0; i < teningar.Length; i++)
             {
-                if (!geyma[i])
+                if (!erGeymdur(i))
                 {
                     teningar[i] = random.Next(1, 6);
                 }
             }
+            kostEftir--;
         }
         public void toggleGeymdur(int index)
         {
@@ -52,5 +51,18 @@ namespace Yatzi
         {
             return geyma[index];
         }
+        public void synaTeninga(int index, PictureBox pBox)
+        {
+            if (erGeymdur(index))
+            {
+                pBox.ImageLocation = @"C:\Users\fridjon14\source\repos\Yatzi\Yatzi\images\blue\" + teningar[index] + ".png";
+            }
+            else
+            {
+                pBox.ImageLocation = @"C:\Users\fridjon14\source\repos\Yatzi\Yatzi\images\white\" + teningar[index] + ".png";
+            }
+        }
+        public int[] getTeningar() { return teningar; }
+        
     }
 }
