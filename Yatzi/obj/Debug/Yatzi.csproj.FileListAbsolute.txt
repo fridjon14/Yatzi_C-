@@ -1,0 +1,9 @@
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\Yatzi.exe.config
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\Yatzi.exe
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\Yatzi.pdb
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csprojAssemblyReference.cache
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.Properties.Resources.resources
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csproj.GenerateResource.cache
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csproj.CoreCompileInputs.cache
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.exe
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.pdb
