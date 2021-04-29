@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Yatzi
 {
-    public partial class Form1 : Form
+    public partial class Yatzi : Form
     {
         PictureBox[] myPictureBoxes;
         Button[] myButtons;
@@ -12,7 +12,7 @@ namespace Yatzi
         Teningar teningar = new Teningar();
         YatziLeikur leikur = new YatziLeikur();
 
-        public Form1()
+        public Yatzi()
         {
             InitializeComponent();
             myPictureBoxes = new PictureBox[] { pictureBox1, pictureBox2, pictureBox3, pictureBox5, pictureBox4 };
@@ -78,6 +78,7 @@ namespace Yatzi
 
         private void button_Click(object sender, EventArgs e)
         {
+            int score = 0;
             Button button = sender as Button;
             int buttonNumer = Array.IndexOf(myButtons, button);
             switch (buttonNumer)
@@ -88,13 +89,43 @@ namespace Yatzi
                 case 3:
                 case 4:
                 case 5:
-                    leikur.setStig(buttonNumer, leikur.summaEinnTilSex(buttonNumer + 1, teningar));
+                    score = leikur.summaEinnTilSex(buttonNumer + 1, teningar);
                     break;
                 case 6:
-
+                    score = leikur.nEins(2, teningar);
+                    break;
+                case 7:
+                    score = leikur.tvoPor(teningar);
+                    break;
+                case 8:
+                    score = leikur.nEins(3, teningar);
+                    break;
+                case 9:
+                    score = leikur.nEins(4, teningar);
+                    break;
+                case 10:
+                    score = leikur.rod(1, teningar);
+                    break;
+                case 11:
+                    score = leikur.rod(2, teningar);
+                    break;
+                case 12:
+                    score = leikur.fulltHus(teningar);
+                    break;
+                case 13:
+                    score = leikur.summaAllra(teningar);
+                    break;
+                case 14:
+                    score = leikur.nEins(5, teningar);
+                    if(score != 0)
+                    {
+                        score = 50;
+                    }
                     break;
             }
+            leikur.setStig(buttonNumer, score);
             synaStigatoflu();
+            efriSumma();
             disableAllirButtons();
             nyUmferd();
 
@@ -114,7 +145,11 @@ namespace Yatzi
                     myLabels[i].Text = stigatafla[i].ToString();
                 }
             }
-
+            myLabels[15].Text = leikur.heildarstig(16).ToString();
+        }
+        public void efriSumma()
+        {
+            label21.Text = leikur.heildarstig(6).ToString();
         }
     }
 }

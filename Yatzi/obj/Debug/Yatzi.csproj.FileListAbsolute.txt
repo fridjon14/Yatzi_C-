@@ -7,4 +7,4 @@ C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csproj.GenerateResou
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csproj.CoreCompileInputs.cache
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.exe
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.pdb
-C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.Form1.resources
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.Yatzi.resources

@@ -1,7 +1,7 @@
 ﻿
 namespace Yatzi
 {
-    partial class Form1
+    partial class Yatzi
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace Yatzi
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -70,7 +71,11 @@ namespace Yatzi
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -95,6 +100,8 @@ namespace Yatzi
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label21);
+            this.splitContainer1.Panel1.Controls.Add(this.label20);
             this.splitContainer1.Panel1.Controls.Add(this.label17);
             this.splitContainer1.Panel1.Controls.Add(this.label15);
             this.splitContainer1.Panel1.Controls.Add(this.label13);
@@ -116,9 +123,16 @@ namespace Yatzi
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 519);
+            this.splitContainer1.Size = new System.Drawing.Size(800, 528);
             this.splitContainer1.SplitterDistance = 185;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(107, 493);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 23);
+            this.label17.TabIndex = 30;
             // 
             // label15
             // 
@@ -227,6 +241,9 @@ namespace Yatzi
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
@@ -244,7 +261,7 @@ namespace Yatzi
             this.panel1.Controls.Add(this.button15);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(81, 513);
+            this.panel1.Size = new System.Drawing.Size(81, 522);
             this.panel1.TabIndex = 0;
             // 
             // button13
@@ -416,7 +433,7 @@ namespace Yatzi
             this.splitContainer2.Panel2.Controls.Add(this.pictureBox3);
             this.splitContainer2.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer2.Panel2.Controls.Add(this.pictureBox1);
-            this.splitContainer2.Size = new System.Drawing.Size(611, 519);
+            this.splitContainer2.Size = new System.Drawing.Size(611, 528);
             this.splitContainer2.SplitterDistance = 349;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -502,21 +519,55 @@ namespace Yatzi
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox_Click);
             // 
-            // label17
+            // label16
             // 
-            this.label17.Location = new System.Drawing.Point(107, 487);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 23);
-            this.label17.TabIndex = 30;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(0, 493);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(75, 23);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Stig Alls";
             // 
-            // Form1
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(3, 206);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(75, 23);
+            this.label18.TabIndex = 32;
+            this.label18.Text = "Bónus";
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(3, 173);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(75, 23);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "Samtals";
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(107, 207);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 23);
+            this.label20.TabIndex = 31;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(107, 176);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(75, 23);
+            this.label21.TabIndex = 32;
+            // 
+            // Yatzi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 519);
+            this.ClientSize = new System.Drawing.Size(800, 528);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Yatzi";
+            this.Text = "Yatzi";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -580,6 +631,11 @@ namespace Yatzi
         private System.Windows.Forms.Label kostEftir;
         private System.Windows.Forms.Label kostEftirLabel;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
     }
 }
 

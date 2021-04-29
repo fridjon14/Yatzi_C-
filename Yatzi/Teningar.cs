@@ -21,7 +21,6 @@ namespace Yatzi
             geyma = new Boolean[5];
             kostEftir = 3;
 
-            Random random = new Random();
 
             for (int i = 0; i < teningar.Length; i++)
             {
@@ -38,7 +37,7 @@ namespace Yatzi
             {
                 if (!erGeymdur(i))
                 {
-                    teningar[i] = random.Next(1, 6);
+                    teningar[i] = random.Next(1, 7);
                 }
             }
             kostEftir--;
