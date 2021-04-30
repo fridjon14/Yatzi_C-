@@ -55,11 +55,11 @@ namespace Yatzi
         {
             if (erGeymdur(index))
             {
-                pBox.ImageLocation = (@"images\blue\" + teningar[index] + ".png");
+                pBox.ImageLocation = (@"b" + teningar[index] + ".png");
             }
             else
             {
-                pBox.ImageLocation = (@"images\white\" + teningar[index] + ".png");
+                pBox.ImageLocation = (@"" + teningar[index] + ".png");
             }
         }
         public int[] getTeningar() { return teningar; }
