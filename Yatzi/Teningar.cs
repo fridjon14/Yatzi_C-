@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Resources;
 
 namespace Yatzi
 {
@@ -53,13 +54,62 @@ namespace Yatzi
         }
         public void synaTeninga(int index, PictureBox pBox)
         {
+            
             if (erGeymdur(index))
             {
-                pBox.ImageLocation = (@"b" + teningar[index] + ".png");
+                switch (teningar[index])
+                {
+                    case 1:
+                        pBox.Image = Properties.Resources.b1;
+                        break;
+
+                    case 2:
+                        pBox.Image = Properties.Resources.b2;
+                        break;
+                    case 3:
+                        pBox.Image = Properties.Resources.b3;
+                        break;
+                    case 4:
+                        pBox.Image = Properties.Resources.b4;
+                        break;
+                    case 5:
+                        pBox.Image = Properties.Resources.b5;
+                        break;
+                    case 6:
+                        pBox.Image = Properties.Resources.b6;
+                        break;
+                }
+                // ResourceManager rm = new ResourceManager("Images", this.GetType().Assembly);
+                //pBox.Image = Properties.Resources.b + index);
+               // pBox.Image = (System.Drawing.Image)rm.GetObject("b0.png"); 
             }
             else
             {
-                pBox.ImageLocation = (@"" + teningar[index] + ".png");
+                switch (teningar[index])
+                {
+                    case 1:
+                        pBox.Image = Properties.Resources._1;
+                        break;
+                    case 2:
+                        pBox.Image = Properties.Resources._2;
+                        break;
+                    case 3:
+                        pBox.Image = Properties.Resources._3;
+                        break;
+                    case 4:
+                        pBox.Image = Properties.Resources._4;
+                        break;
+                    case 5:
+                        pBox.Image = Properties.Resources._5;
+                        break;
+                    case 6:
+                        pBox.Image = Properties.Resources._6;
+                        break;
+                }
+                //ResourceManager rm = new ResourceManager("Images", this.GetType().Assembly);
+                //pBox.Image = Properties.Resources.b1; 
+                //(System.Drawing.Image)rm.GetObject("Images/0.png");
+                // pBox.Image = (@"" + teningar[index] + ".png");
             }
         }
         public int[] getTeningar() { return teningar; }
