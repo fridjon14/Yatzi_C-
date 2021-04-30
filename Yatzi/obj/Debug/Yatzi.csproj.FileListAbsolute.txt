@@ -8,3 +8,16 @@ C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.csproj.CoreCompileIn
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.exe
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.pdb
 C:\Users\fridjon14\source\repos\Yatzi\Yatzi\obj\Debug\Yatzi.Yatzi.resources
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\1.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\2.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\3.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\4.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\5.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\blue\6.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\0.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\1.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\2.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\3.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\4.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\5.png
+C:\Users\fridjon14\source\repos\Yatzi\Yatzi\bin\Debug\images\white\6.png

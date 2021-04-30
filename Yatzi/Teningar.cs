@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Yatzi
 {
@@ -54,11 +55,11 @@ namespace Yatzi
         {
             if (erGeymdur(index))
             {
-                pBox.ImageLocation = @"C:\Users\fridjon14\source\repos\Yatzi\Yatzi\images\blue\" + teningar[index] + ".png";
+                pBox.ImageLocation = (@"images\blue\" + teningar[index] + ".png");
             }
             else
             {
-                pBox.ImageLocation = @"C:\Users\fridjon14\source\repos\Yatzi\Yatzi\images\white\" + teningar[index] + ".png";
+                pBox.ImageLocation = (@"images\white\" + teningar[index] + ".png");
             }
         }
         public int[] getTeningar() { return teningar; }

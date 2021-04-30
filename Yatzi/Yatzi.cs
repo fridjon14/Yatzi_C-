@@ -128,13 +128,14 @@ namespace Yatzi
             efriSumma();
             disableAllirButtons();
             nyUmferd();
-
         }
+
         public void nyUmferd()
         {
             teningar = new Teningar();
             button16.Enabled = true;
         }
+        
         public void synaStigatoflu() 
         {
             int[] stigatafla = leikur.getStigatafla();
@@ -147,6 +148,7 @@ namespace Yatzi
             }
             myLabels[15].Text = leikur.heildarstig(16).ToString();
         }
+
         public void efriSumma()
         {
             label21.Text = leikur.heildarstig(6).ToString();
